@@ -1,3 +1,5 @@
 pytrials
 pandas
 metapub
+matplotlib
+seaborn
