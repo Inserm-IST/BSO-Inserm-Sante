@@ -1,5 +1,6 @@
 pytrials
 pandas
+openpyxl
 metapub
 matplotlib
 seaborn
