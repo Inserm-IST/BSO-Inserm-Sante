@@ -1,5 +1,7 @@
-#pytrials
-pandas
-openpyxl
 matplotlib
+openpyxl
+pandas
+#pytrials
+requests
+requests-cache
 seaborn
