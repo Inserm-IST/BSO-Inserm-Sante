@@ -1,4 +1,5 @@
 matplotlib
+notebook
 numpy
 openpyxl
 pandas
