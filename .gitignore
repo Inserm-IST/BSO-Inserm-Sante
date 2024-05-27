@@ -1,5 +1,6 @@
 .cache
 .ipynb_checkpoints
+.venv
 venv
 
 Untitled.ipynb
