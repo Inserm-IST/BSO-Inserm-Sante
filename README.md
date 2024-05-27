@@ -21,3 +21,48 @@ Comprendre et interpréter les données des études extraites dans le notebook p
 
 - `03_traitement_manuel_donnees_sante.ipynb`  
 Intégrer les données qui ont dû faire l'objet d'un traitement manuel.
+
+# Installation :
+
+## Cloner le repository localement :
+
+```bash
+git clone https://github.com/Inserm-IST/BSO-Inserm-Sante.git
+```
+
+Ce déplacer dans le répertoire nouvellement créer :
+
+``` bash
+cd BSO-Inserm-Sante/
+```
+
+## Créer un environnement virtuel :
+
+**Pour plus de détails, voir [Create and Use Virtual Environments.](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)**
+
+Créer un environnement virtuel '.venv' :
+
+```bash
+python -m venv .venv
+```
+
+Activer l'environnement virtuel :  
+
+```bash
+# Unix/macOS
+source .venv/bin/activate
+
+# Windows
+.venv\Scripts\activate
+```
+
+Installer les librairies dans l'environnement virtuel :
+
+```bash
+python -m pip install -r requirements.txt
+```
+## Lancer le notebook :
+
+```bash
+jupyter notebook
+```
