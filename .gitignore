@@ -1,6 +1,11 @@
+# Cache
 .cache
+http_cache.sqlite
+
+# Jupyter Notebook
 .ipynb_checkpoints
+Untitled.ipynb
+
+# Virtual environment
 .venv
 venv
-
-Untitled.ipynb
