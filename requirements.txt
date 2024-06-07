@@ -1,4 +1,3 @@
-kaleido
 matplotlib
 notebook
 numpy
