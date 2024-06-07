@@ -3,6 +3,7 @@ notebook
 numpy
 openpyxl
 pandas
+plotly
 #pytrials
 requests
 requests-cache
