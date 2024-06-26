@@ -1,3 +1,4 @@
+highcharts-core
 matplotlib
 notebook
 numpy
