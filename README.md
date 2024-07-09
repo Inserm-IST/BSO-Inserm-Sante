@@ -1,42 +1,46 @@
+# Baromètre de la Science Ouverte des études affiliées Inserm
+
 **$${\textsf{\color{red}Version [bêta]: Travail en cours, sujet à modification}}$$**
 
-# Presentation :
+## Presentation
 
-Dans une démarche similaire au [Baromètre de la Science Ouverte des publications Inserm](https://github.com/Inserm-IST/BSO-Inserm) et au [Baromètre français de la Science Ouverte](https://barometredelascienceouverte.esr.gouv.fr/), on souhaite évaluer le nombre de publications qui sont le résultat d'essais cliniques ou d'études observationnelles  dont l'INSERM est le promoteur.
+Dans une démarche similaire à celle du [Baromètre de la Science Ouverte des publications de l'Inserm](https://github.com/Inserm-IST/BSO-Inserm) et du [Baromètre français de la Science Ouverte](https://barometredelascienceouverte.esr.gouv.fr/), nous souhaitons évaluer le nombre de publications résultant des essais cliniques ou des études observationnelles dont l'INSERM est le promoteur.
 
-En particulier, on souhaite :
-- Repérer les études qui ne donnent lieu à aucune publication et essayer de comprendre les raisons de cette absence de publication.
-- Identifier et encourager la publication de résultats d'études négatives
-- Analyser le statut d'accès (ouvert ou fermé) de ces publications
+En particulier, nous avons pour objectifs :
 
-# Organisation :
+- Repérer les études qui ne donnent lieu à aucune publication et tenter de comprendre les raisons de cette absence de publication.
+- Identifier et encourager la publication des résultats d'études négatives.
+- Analyser le statut d'accès (ouvert ou fermé) de ces publications.
+
+## Organisation
 
 Ce dépôt est divisé en plusieurs [notebooks Jupyter](https://jupyter.org/) :
 
 - `01_extraction_donnees_sante.ipynb`  
-Contient le code pour l'extraction automatique les données des études, en utilisant différentes API.
+Contient le code pour l'extraction automatique les données des études, en utilisant différentes API ([ClinicalTrials](https://clinicaltrials.gov/), [PubMed](https://pubmed.ncbi.nlm.nih.gov/), [Unpaywall](https://unpaywall.org/products/api) et [OpenAlex](https://openalex.org/)).
 
 - `02_traitement_donnees_sante.ipynb`  
-Comprendre et interpréter les données des études extraites dans le notebook précédent, notamment en générant des visualisations.
+Permet de comprendre et interpréter les données des études extraites dans le notebook précédent, notamment en générant des visualisations.
 
 - `03_traitement_manuel_donnees_sante.ipynb`  
-Intégrer les données qui ont dû faire l'objet d'un traitement manuel.
+Intègre les données qui ont dû faire l'objet d'un traitement manuel avec les données récupérées automatiquement dans les notebooks précédents.  
+À partir de cet ensemble de données, génère des statistiques et des visualisations.
 
-# Installation :
+## Installation
 
-## Cloner le repository localement :
+### Cloner le repository localement :
 
 ```bash
 git clone https://github.com/Inserm-IST/BSO-Inserm-Sante.git
 ```
 
-Ce déplacer dans le répertoire nouvellement créer :
+Se déplacer dans le répertoire nouvellement crée :
 
 ``` bash
 cd BSO-Inserm-Sante/
 ```
 
-## Créer un environnement virtuel :
+### Créer un environnement virtuel :
 
 **Pour plus de détails, voir [Create and Use Virtual Environments.](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)**
 
@@ -61,7 +65,8 @@ Installer les librairies dans l'environnement virtuel :
 ```bash
 python -m pip install -r requirements.txt
 ```
-## Lancer le notebook :
+
+### Lancer le notebook :
 
 ```bash
 jupyter notebook
