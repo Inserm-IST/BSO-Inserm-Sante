@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div id="container"></div>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script>document.addEventListener('DOMContentLoaded', function() {
+Highcharts.chart('container',
+{
+  chart: {
+  height: 500,
+  type: 'column',
+  width: 750
+},
+  colors: ['#EF553B',
+'#1F77B4'],
+  credits: {
+  enabled: false
+},
+  plotOptions: {
+  column: {
+  groupPadding: 0.15,
+  stacking: 'normal',
+  dataLabels: {
+  enabled: true
+},
+  events: {
+  legendItemClick: function() {
+return false}
+},
+  stickyTracking: false,
+  type: 'column'
+}
+},
+  series: [{
+  data: [[8],
+[10],
+[13],
+[21],
+[12],
+[18],
+[9],
+[9],
+[6],
+[6]],
+  name: 'Sans résultat',
+  type: 'column'
+},
+{
+  data: [[9],
+[9],
+[11],
+[10],
+[12],
+[7],
+[6],
+[3],
+[6],
+[5]],
+  name: 'Avec résultat',
+  type: 'column'
+}],
+  subtitle: {
+  text: '2013 - 2022'
+},
+  title: {
+  text: 'Nombre d\'études avec communication de résultats par année de fin'
+},
+  tooltip: {
+  pointFormat: '<span style="color:{point.color}">●</span> {series.name}: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+  shared: true
+},
+  xAxis: {
+  categories: ['2013',
+'2014',
+'2015',
+'2016',
+'2017',
+'2018',
+'2019',
+'2020',
+'2021',
+'2022'],
+  tickLength: 5,
+  tickmarkPlacement: 'on',
+  tickWidth: 1
+},
+  yAxis: {
+  stackLabels: {
+  enabled: true
+},
+  min: 0,
+  title: {
+  text: 'Nombre d\'études'
+}
+}
+},
+);
+});</script>
+</body>
+
+</html>

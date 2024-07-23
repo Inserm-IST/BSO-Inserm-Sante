@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div id="container"></div>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script>document.addEventListener('DOMContentLoaded', function() {
+Highcharts.chart('container',
+{
+  accessibility: {
+  point: {
+  valueSuffix: '%'
+}
+},
+  chart: {
+  type: 'pie'
+},
+  colors: ['tomato',
+'#CD7F32',
+'gold',
+'#4CAF50',
+'#E6AB19'],
+  credits: {
+  enabled: false
+},
+  plotOptions: {
+  series: {
+  allowPointSelect: true,
+  cursor: 'pointer',
+  dataLabels: [{
+  enabled: true,
+  format: '{point.name}<br>{point.percentage:.1f}%'
+}],
+  stickyTracking: false,
+  type: 'series'
+}
+},
+  series: [{
+  data: [{
+  sliced: true,
+  y: 77,
+  name: 'Accès fermé',
+  selected: true
+},
+['Bronze',57],
+['Gold',50],
+['Green',29],
+['Hybrid',23]],
+  name: 'Percentage',
+  type: 'pie'
+}],
+  subtitle: {
+  text: '2013 - 2022'
+},
+  title: {
+  text: 'Statut OpenAccess des résultats publiés'
+},
+  tooltip: {
+  pointFormat: '<span style="color:{point.color}">●</span> Publications: <b>{point.y}</b><br/>'
+}
+},
+);
+});</script>
+</body>
+
+</html>

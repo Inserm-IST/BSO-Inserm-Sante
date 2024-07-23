@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div id="container"></div>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script>document.addEventListener('DOMContentLoaded', function() {
+Highcharts.chart('container',
+{
+  chart: {
+  height: 500,
+  type: 'column',
+  width: 850
+},
+  colors: ['#e7298a',
+'#ff7f00'],
+  credits: {
+  enabled: false
+},
+  plotOptions: {
+  column: {
+  groupPadding: 0.05,
+  stacking: 'normal',
+  events: {
+  legendItemClick: function() {
+return false}
+},
+  stickyTracking: false,
+  type: 'column'
+}
+},
+  series: [{
+  data: [['Entre -15 et -14 ans',
+1],
+['Entre -14 et -13 ans',
+0],
+['Entre -13 et -12 ans',
+2],
+['Entre -12 et -11 ans',
+0],
+['Entre -11 et -10 ans',
+0],
+['Entre -10 et -9 ans',
+0],
+['Entre -9 et -8 ans',
+0],
+['Entre -8 et -7 ans',
+0],
+['Entre -7 et -6 ans',
+0],
+['Entre -6 et -5 ans',
+0],
+['Entre -5 et -4 ans',
+3],
+['Entre -4 et -3 ans',
+0],
+['Entre -3 et -2 ans',
+0],
+['Entre -2 et -1 ans',
+0],
+['Entre -1 et 0 ans',
+3],
+['Entre 0 et 1 ans',
+3],
+['Entre 1 et 2 ans',
+2],
+['Entre 2 et 3 ans',
+3],
+['Entre 3 et 4 ans',
+2],
+['Entre 4 et 5 ans',
+1],
+['Entre 5 et 6 ans',
+0],
+['Entre 6 et 7 ans',
+1],
+['Entre 7 et 8 ans',
+0],
+['Entre 8 et 9 ans',
+0],
+['Entre 9 et 10 ans',
+1]],
+  name: 'Etude observationnelle',
+  type: 'column'
+},
+{
+  data: [['Entre -15 et -14 ans',
+0],
+['Entre -14 et -13 ans',
+0],
+['Entre -13 et -12 ans',
+0],
+['Entre -12 et -11 ans',
+0],
+['Entre -11 et -10 ans',
+1],
+['Entre -10 et -9 ans',
+0],
+['Entre -9 et -8 ans',
+0],
+['Entre -8 et -7 ans',
+0],
+['Entre -7 et -6 ans',
+0],
+['Entre -6 et -5 ans',
+0],
+['Entre -5 et -4 ans',
+0],
+['Entre -4 et -3 ans',
+1],
+['Entre -3 et -2 ans',
+2],
+['Entre -2 et -1 ans',
+2],
+['Entre -1 et 0 ans',
+2],
+['Entre 0 et 1 ans',
+13],
+['Entre 1 et 2 ans',
+14],
+['Entre 2 et 3 ans',
+9],
+['Entre 3 et 4 ans',
+8],
+['Entre 4 et 5 ans',
+2],
+['Entre 5 et 6 ans',
+2],
+['Entre 6 et 7 ans',
+0],
+['Entre 7 et 8 ans',
+0],
+['Entre 8 et 9 ans',
+0],
+['Entre 9 et 10 ans',
+0]],
+  name: 'Essai clinique',
+  type: 'column'
+}],
+  title: {
+  text: 'Délai entre la fin de l\'étude et la publication du premier résultat'
+},
+  tooltip: {
+  headerFormat: '{point.point.name}<br />',
+  pointFormat: '<span style="color:{point.color}">●</span> {series.name}: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+  shared: true
+},
+  xAxis: {
+  categories: ['-15',
+'-14',
+'-13',
+'-12',
+'-11',
+'-10',
+'-9',
+'-8',
+'-7',
+'-6',
+'-5',
+'-4',
+'-3',
+'-2',
+'-1',
+'0',
+'1',
+'2',
+'3',
+'4',
+'5',
+'6',
+'7',
+'8',
+'9',
+'10'],
+  labels: {
+  x: -16
+},
+  plotLines: [{
+  dashStyle: 'Dash',
+  value: 14.5,
+  width: 2
+}],
+  tickLength: 5,
+  tickWidth: 1,
+  title: {
+  text: 'Délai (en années)'
+}
+},
+  yAxis: {
+  min: 0,
+  title: {
+  text: 'Nombre de publications'
+}
+}
+},
+);
+});</script>
+</body>
+
+</html>

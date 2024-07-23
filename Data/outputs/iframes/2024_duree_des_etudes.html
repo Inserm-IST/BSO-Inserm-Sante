@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div id="container"></div>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script>document.addEventListener('DOMContentLoaded', function() {
+Highcharts.chart('container',
+{
+  chart: {
+  height: 500,
+  type: 'column',
+  width: 750
+},
+  colors: ['#e7298a',
+'#ff7f00'],
+  credits: {
+  enabled: false
+},
+  plotOptions: {
+  column: {
+  groupPadding: 0.05,
+  stacking: 'normal',
+  dataLabels: {
+  filter: {
+  operator: '>',
+  property: 'y',
+  value: 0
+}
+},
+  events: {
+  legendItemClick: function() {
+return false}
+},
+  stickyTracking: false,
+  type: 'column'
+}
+},
+  series: [{
+  data: [['Entre 0 et 1 ans',
+4],
+['Entre 1 et 2 ans',
+15],
+['Entre 2 et 3 ans',
+15],
+['Entre 3 et 4 ans',
+7],
+['Entre 4 et 5 ans',
+4],
+['Entre 5 et 6 ans',
+1],
+['Entre 6 et 7 ans',
+4],
+['Entre 7 et 8 ans',
+1],
+['Entre 8 et 9 ans',
+1],
+['Entre 9 et 10 ans',
+1],
+['Entre 10 et 11 ans',
+0],
+['Entre 11 et 12 ans',
+0],
+['Entre 12 et 13 ans',
+1],
+['Entre 13 et 14 ans',
+0],
+['Entre 14 et 15 ans',
+0],
+['Entre 15 et 16 ans',
+2],
+['Entre 16 et 17 ans',
+0],
+['Entre 17 et 18 ans',
+2],
+['Entre 18 et 19 ans',
+0],
+['Entre 19 et 20 ans',
+1],
+['Entre 20 et 21 ans',
+0],
+['Entre 21 et 22 ans',
+1]],
+  name: 'Etude observationnelle',
+  type: 'column'
+},
+{
+  data: [['Entre 0 et 1 ans',
+10],
+['Entre 1 et 2 ans',
+23],
+['Entre 2 et 3 ans',
+30],
+['Entre 3 et 4 ans',
+32],
+['Entre 4 et 5 ans',
+17],
+['Entre 5 et 6 ans',
+7],
+['Entre 6 et 7 ans',
+5],
+['Entre 7 et 8 ans',
+2],
+['Entre 8 et 9 ans',
+2],
+['Entre 9 et 10 ans',
+1],
+['Entre 10 et 11 ans',
+1],
+['Entre 11 et 12 ans',
+0],
+['Entre 12 et 13 ans',
+0],
+['Entre 13 et 14 ans',
+0],
+['Entre 14 et 15 ans',
+0],
+['Entre 15 et 16 ans',
+0],
+['Entre 16 et 17 ans',
+0],
+['Entre 17 et 18 ans',
+0],
+['Entre 18 et 19 ans',
+0],
+['Entre 19 et 20 ans',
+0],
+['Entre 20 et 21 ans',
+0],
+['Entre 21 et 22 ans',
+0]],
+  name: 'Essai clinique',
+  type: 'column'
+}],
+  title: {
+  text: 'Durée des études'
+},
+  tooltip: {
+  headerFormat: '{point.point.name}<br />',
+  pointFormat: '<span style="color:{point.color}">●</span> {series.name}: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+  shared: true
+},
+  xAxis: {
+  categories: ['0',
+'1',
+'2',
+'3',
+'4',
+'5',
+'6',
+'7',
+'8',
+'9',
+'10',
+'11',
+'12',
+'13',
+'14',
+'15',
+'16',
+'17',
+'18',
+'19',
+'20',
+'21',
+'22'],
+  labels: {
+  x: -16
+},
+  tickLength: 5,
+  tickmarkPlacement: 'between',
+  tickWidth: 1,
+  title: {
+  text: 'Durée de l\'étude (en années)'
+}
+},
+  yAxis: {
+  min: 0,
+  title: {
+  text: 'Nombre d\'études'
+}
+}
+},
+);
+});</script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div id="container"></div>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/treemap.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script>document.addEventListener('DOMContentLoaded', function() {
+Highcharts.chart('container',
+{
+  credits: {
+  enabled: false
+},
+  series: [{
+  data: [{
+  value: 73,
+  color: '#1f77b4',
+  name: 'Infectious Diseases'
+},
+{
+  value: 34,
+  color: '#ff7f0e',
+  name: 'Hepatology'
+},
+{
+  value: 20,
+  color: '#2ca02c',
+  name: 'Epidemiology'
+},
+{
+  value: 18,
+  color: '#d62728',
+  name: 'Cellular and Molecular Neuroscience'
+},
+{
+  value: 13,
+  color: '#9467bd',
+  name: 'Public Health, Environmental and Occupational Health'
+},
+{
+  value: 11,
+  color: '#8c564b',
+  name: 'Ophthalmology'
+},
+{
+  value: 11,
+  color: '#e377c2',
+  name: 'Virology'
+},
+{
+  value: 6,
+  color: '#7f7f7f',
+  name: 'Emergency Medicine'
+},
+{
+  value: 5,
+  color: '#bcbd22',
+  name: 'Radiology, Nuclear Medicine and Imaging'
+},
+{
+  value: 5,
+  color: '#17becf',
+  name: 'Physiology'
+},
+{
+  value: 5,
+  color: '#1f77b4',
+  name: 'Psychiatry and Mental health'
+},
+{
+  value: 4,
+  color: '#ff7f0e',
+  name: 'Pharmacology'
+},
+{
+  value: 3,
+  color: '#2ca02c',
+  name: 'Neurology'
+},
+{
+  value: 3,
+  color: '#d62728',
+  name: 'Molecular Biology'
+},
+{
+  value: 3,
+  color: '#9467bd',
+  name: 'Clinical Psychology'
+},
+{
+  value: 3,
+  color: '#8c564b',
+  name: 'Oncology'
+}],
+  layoutAlgorithm: 'squarified',
+  clip: false,
+  type: 'treemap'
+}],
+  subtitle: {
+  align: 'left',
+  text: 'Publications résultant d\'une étude'
+},
+  title: {
+  align: 'left',
+  text: 'Domaines de recherche avec le plus de publications'
+},
+  tooltip: {
+  pointFormat: '{point.name}: <b>{point.value}</b> Publications'
+}
+},
+);
+});</script>
+</body>
+
+</html>
