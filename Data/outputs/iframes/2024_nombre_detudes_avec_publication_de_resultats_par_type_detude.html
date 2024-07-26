@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div id="container"></div>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script>document.addEventListener('DOMContentLoaded', function() {
+Highcharts.chart('container',
+{
+  chart: {
+  type: 'bar',
+  width: 750
+},
+  colors: ['#EF553B',
+'#1F77B4'],
+  credits: {
+  enabled: false
+},
+  legend: {
+  reversed: true
+},
+  plotOptions: {
+  bar: {
+  groupPadding: 0.05,
+  stacking: 'normal',
+  dataLabels: {
+  enabled: true
+},
+  events: {
+  legendItemClick: function() {
+return false}
+},
+  stickyTracking: false,
+  type: 'bar'
+}
+},
+  series: [{
+  data: [[74],
+[38]],
+  name: 'Sans résultat',
+  type: 'bar'
+},
+{
+  data: [[56],
+[22]],
+  name: 'Avec résultat',
+  type: 'bar'
+}],
+  subtitle: {
+  text: '2013 - 2022'
+},
+  title: {
+  text: 'Nombre d\'études avec publication de résultats par type d\'étude'
+},
+  tooltip: {
+  pointFormat: '<span style="color:{point.color}">●</span> {series.name}: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+  shared: true
+},
+  xAxis: {
+  categories: ['Essai clinique',
+'Etude observationnelle']
+},
+  yAxis: {
+  stackLabels: {
+  enabled: true
+},
+  min: 0,
+  title: {
+  text: 'Nombre d\'études'
+}
+}
+},
+);
+});</script>
+</body>
+
+</html>
