@@ -4,7 +4,7 @@ http_cache.sqlite
 
 # Jupyter Notebook
 .ipynb_checkpoints
-Untitled.ipynb
+Untitled*.ipynb
 
 # Virtual environment
 .venv
